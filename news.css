@@ -1,0 +1,218 @@
+.upk-container {
+  display: flow-root;
+  box-sizing: content-box;
+  max-width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.upk-featured-list {
+  position: relative;
+  counter-reset: number-count;
+}
+.upk-featured-list .upk-featured-list-item {
+  position: relative;
+}
+.upk-featured-list .upk-featured-list-item .upk-featured-list-item-box {
+  width: 100%;
+}
+.upk-featured-list .upk-featured-list-item .upk-featured-image-wrap {
+  display: none;
+}
+.upk-featured-list .upk-featured-list-item .upk-featured-image-wrap .upk-featured-img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+.upk-featured-list .upk-featured-list-item .upk-featured-list-content {
+  position: relative;
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+}
+.upk-featured-list .upk-featured-list-item .upk-featured-list-counter {
+  counter-increment: number-count;
+  height: 55px;
+  min-width: 55px;
+  width: 55px;
+  background: #ffedef;
+  text-align: center;
+  border-radius: 80px;
+  position: relative;
+  display: inline-table;
+  margin-right: 15px;
+}
+.upk-featured-list .upk-featured-list-item .upk-featured-list-counter:before {
+  content: counter(number-count);
+  color: #4a36a3;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 1;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+.upk-featured-list .upk-featured-list-item .upk-featured-list-title {
+  margin: 0;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 1.4;
+}
+.upk-featured-list .upk-featured-list-item .upk-featured-list-title a {
+  color: #2b2d42;
+  text-decoration: none;
+}
+.upk-featured-list .upk-featured-list-item .upk-featured-list-title a:hover {
+  color: #3234af;
+}
+.upk-featured-list .upk-featured-list-item .upk-featured-list-category {
+  padding-bottom: 5px;
+  display: inline-flex;
+}
+.upk-featured-list .upk-featured-list-item .upk-featured-list-category a {
+  color: #8d99ae;
+  font-size: 13px;
+  letter-spacing: 0.5px;
+  display: -webkit-inline-box;
+  line-height: 1;
+  text-transform: capitalize;
+  transition: all 0.3s ease;
+  position: relative;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+}
+.upk-featured-list .upk-featured-list-item .upk-featured-list-category a span {
+  height: 8px;
+  width: 8px;
+  display: block;
+  border-radius: 50%;
+  margin-right: 5px;
+}
+.upk-featured-list .upk-featured-list-item .upk-featured-list-category a + a {
+  margin-left: 10px;
+}
+.upk-featured-list .upk-featured-list-item .upk-featured-meta {
+  display: flex;
+  align-items: center;
+  position: relative;
+  color: #8d99ae;
+  font-size: 11px;
+  line-height: 1;
+  padding-top: 10px;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+.upk-featured-list .upk-featured-list-item .upk-featured-meta .upk-author-name-wrap {
+  display: flex;
+}
+.upk-featured-list .upk-featured-list-item .upk-featured-meta .upk-author-name-wrap .upk-by {
+  font-weight: 700;
+  padding-right: 6px;
+}
+.upk-featured-list .upk-featured-list-item .upk-featured-meta .upk-author-name-wrap .upk-author-name {
+  text-decoration: none;
+  color: #8d99ae;
+  font-weight: 500;
+}
+.upk-featured-list .upk-featured-list-item .upk-featured-meta .upk-separator {
+  margin: 0 6px;
+  font-weight: bold;
+}
+.upk-featured-list .upk-featured-list-item .upk-featured-meta .upk-post-time {
+  margin-left: 5px;
+}
+.upk-featured-list .upk-featured-list-item .upk-featured-meta .upk-post-time i {
+  margin-right: 2px;
+}
+.upk-featured-list .upk-featured-list-item:nth-child(1) .upk-featured-image-wrap {
+  display: flex;
+  position: relative;
+  overflow: hidden;
+}
+.upk-featured-list .upk-featured-list-item:nth-child(1) .upk-featured-image-wrap::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(0deg, #2b2d42 0, rgba(141, 153, 174, 0.1) 100%);
+  transition: background 0.3s ease;
+}
+.upk-featured-list .upk-featured-list-item:nth-child(1) .upk-featured-list-content {
+  position: absolute;
+  bottom: 0;
+  padding-bottom: 20px;
+}
+.upk-featured-list .upk-featured-list-item:nth-child(1) .upk-featured-list-title a {
+  color: #fff;
+}
+.upk-featured-list .upk-featured-list-item:nth-child(1) .upk-featured-list-title a:hover {
+  color: #ef233c;
+}
+.upk-featured-list .upk-featured-list-item:nth-child(1) .upk-featured-list-category a {
+  color: #edf2f4;
+}
+.upk-featured-list .upk-featured-list-item:nth-child(1) .upk-featured-meta {
+  color: #edf2f4;
+}
+.upk-featured-list .upk-featured-list-item:nth-child(1) .upk-featured-meta .upk-author-name-wrap .upk-author-name {
+  color: #edf2f4;
+}
+.upk-featured-list .upk-featured-list-item:nth-child(2) .upk-featured-list-content {
+  padding-top: 20px;
+}
+.upk-featured-list .upk-featured-list-item:nth-last-child(1) .upk-featured-list-content {
+  padding-bottom: 20px;
+}
+.upk-global-link-yes .upk-featured-list .upk-featured-list-item:hover {
+  cursor: pointer;
+}
+@media (min-width: 768px) {
+  .upk-featured-list .upk-featured-list-item .upk-featured-list-content {
+    padding: 15px 30px;
+ }
+  .upk-featured-list .upk-featured-list-item .upk-featured-list-counter {
+    height: 80px;
+    width: 80px;
+    min-width: 80px;
+    margin-right: 20px;
+ }
+  .upk-featured-list .upk-featured-list-item .upk-featured-list-counter:before {
+    font-size: 24px;
+ }
+  .upk-featured-list .upk-featured-list-item .upk-featured-list-title {
+    font-size: 22px;
+ }
+  .upk-featured-list .upk-featured-list-item .upk-featured-meta {
+    font-size: 12px;
+ }
+  .upk-featured-list .upk-featured-list-item .upk-featured-list-category {
+    padding-bottom: 8px;
+ }
+  .upk-featured-list .upk-featured-list-item .upk-featured-list-category a {
+    font-size: 14px;
+ }
+  .upk-featured-list .upk-featured-list-item:nth-child(2) .upk-featured-list-content {
+    padding-top: 30px;
+ }
+  .upk-featured-list .upk-featured-list-item:nth-child(1) .upk-featured-list-content {
+    padding-bottom: 30px;
+ }
+  .upk-featured-list .upk-featured-list-item:nth-last-child(1) .upk-featured-list-content {
+    padding-bottom: 30px;
+ }
+}
+.button {
+  background: #f00;
+  padding: 18px 20px;
+  text-transform: uppercase;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  display: inline-block;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 15px;
+  color: #fff;
+}
